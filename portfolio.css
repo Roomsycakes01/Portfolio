@@ -2,21 +2,45 @@
 	box-sizing: border-box;
 }
 
+body{
+	background-color:#F8F7F2;
+}
+h1{
+	background-color:#EC6205;
+	border-radius:16px;
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:5px;
+	margin-
+}
 main{
 	height: 100vh;
 	margin:0 auto;
 	display: flex;
 	flex-direction: column;
-	justify-content:space-between;
-	align-items: center;
+}
+a{
+	font-size:18px;
+	padding:10px;
+	border-radius:16px;
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+	margin:0 auto;
+	text-decoration:none;
+	color:black;
 }
 
-header{
-	padding:50px 0px;
+a:hover, a:active{
+	background-color:#EC6205;
 }
 
 section{
-	height:60%;
+	height:70%;
 	width:80%;
 	margin:0 auto;
 	display:flex;
@@ -29,15 +53,15 @@ section{
 .projects{
 	display:flex;
 	height:100%;
+	margin-right:250px;
 	flex-direction:column;
-	align-items:center;
 }
 nav{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-around;
-	align-items:center;
 	height:80%;
+	margin:0px 5=40px;
 }
 
 .link_bar{
@@ -47,7 +71,20 @@ nav{
 	flex direction:row;
 	justify-content:space-between;
 	align-items:center;
+	margin-top:30px;
+	margin-bottom:30px;
 }
+
+
+footer{
+	background-color:#058FEC;
+	border-radius:16px;
+	border-style: solid;
+	border-width:1px;
+	border-color:black;
+	padding:20px 20px;
+}
+
 
 .contact_info{
 	display:flex;
@@ -56,7 +93,7 @@ nav{
 
 .contact_buttons{
 	height:100%;
-	width:20%;
+	width:200px;
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
@@ -73,7 +110,7 @@ nav{
 .img{
 	width: 300px;
 	height:300px;
-	margin:20px;
+	margin:50px;
 }
 
 .img_wrap{
@@ -96,5 +133,9 @@ nav{
 .header_placement{
 	display:flex;
 	flex-direction:row-reverse;
+}
+
+.top_link{
+	margin:0px 50px;
 }
 
