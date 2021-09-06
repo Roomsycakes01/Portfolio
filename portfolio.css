@@ -9,14 +9,22 @@ main{
 	flex-direction: column;
 	justify-content:space-between;
 	align-items: center;
+}
+
+header{
 	padding:50px 0px;
 }
 
 section{
 	height:60%;
-	width:100%;
+	width:80%;
+	margin:0 auto;
 	display:flex;
-	justify-content:space-around;
+	justify-content:space-between;
+}
+
+.center_paragraph{
+	min-height:350px;
 }
 .projects{
 	display:flex;
@@ -33,10 +41,11 @@ nav{
 }
 
 .link_bar{
-	width:100%;
+	width:80%;
+	margin:0 auto;
 	display:flex;
 	flex direction:row;
-	justify-content:space-around;
+	justify-content:space-between;
 	align-items:center;
 }
 
@@ -52,5 +61,40 @@ nav{
 	justify-content:space-around;
 	align-items:center;
 	
+}
+
+.center_bar{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+}
+
+.img{
+	width: 300px;
+	height:300px;
+	margin:20px;
+}
+
+.img_wrap{
+	margin:0 auto;
+	width:80%;
+}
+.float_img{
+	float:left;
+}
+
+.float_title{
+	margin:0 auto;
+}
+.text_box{
+	width:50%;
+	display:flex;
+	flex-direction:column;
+}
+
+.header_placement{
+	display:flex;
+	flex-direction:row-reverse;
 }
 
