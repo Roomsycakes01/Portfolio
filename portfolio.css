@@ -9,14 +9,26 @@ h1{
 	background-color:#EC6205;
 	border-radius:16px;
 	border-style: solid;
-	border-width:1px;
+	border-width:2px;
 	border-color:black;
 	margin:auto;
 	margin-top:10px;
 	margin-bottom:10px;
 	padding:5px;
-	margin-
 }
+
+h2{
+	border-radius:16px;
+	border-style: solid;
+	border-width:2px;
+	border-color:black;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:5px;
+}
+
+
 main{
 	height: 100vh;
 	margin:0 auto;
@@ -28,7 +40,7 @@ a{
 	padding:10px;
 	border-radius:16px;
 	border-style: solid;
-	border-width:1px;
+	border-width:2px;
 	border-color:black;
 	margin:0 auto;
 	text-decoration:none;
@@ -48,7 +60,7 @@ section{
 }
 
 .center_paragraph{
-	min-height:350px;
+	min-height:400px;
 }
 .projects{
 	display:flex;
@@ -80,7 +92,7 @@ footer{
 	background-color:#058FEC;
 	border-radius:16px;
 	border-style: solid;
-	border-width:1px;
+	border-width:2px;
 	border-color:black;
 	padding:20px 20px;
 }
@@ -102,15 +114,25 @@ footer{
 
 .center_bar{
 	display:flex;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:80%;
 	flex-direction:column;
 	align-items:center;
+	background-color:#058FEC;
+	border-radius:16px;
+	border-style: solid;
+	border-width:2px;
+	border-color:black;
+	padding:20px 20px;
 	
 }
 
 .img{
 	width: 300px;
 	height:300px;
-	margin:50px;
+	margin:20px 50px;
 }
 
 .img_wrap{
@@ -136,6 +158,6 @@ footer{
 }
 
 .top_link{
-	margin:0px 50px;
+	margin:0px 100px;
 }
 
