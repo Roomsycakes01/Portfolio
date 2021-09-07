@@ -28,11 +28,11 @@ h1{
 	margin-bottom:5px;
 }
 h2{
-	background-color:#8D8741;
+	background-color:#659DBD;;
 	border-radius:16px;
 	border-style: solid;
 	border-width:2px;
-	border-color:#BC986A;
+	border-color:#8D8741;
 	margin:auto;
 	margin-top:10px;
 	margin-bottom:10px;
@@ -96,7 +96,7 @@ section{
 }
 
 .paragraph p{
-	color:white;
+	color:#FFF;
 }
 
 .projects{
@@ -183,17 +183,18 @@ footer{
 
 .img{
 	width:40%;
-	height:auto;
-	margin:20px;
+	height: fit-content;
+	padding:20px;
 }
 
 .img_wrap{
 	margin:0 auto;
-	height:100%;
-	width:80%;
+
 }
+
 .float_img{
 	float:left;
+	width:30%;
 }
 
 .float_title{
@@ -227,7 +228,7 @@ footer{
 
 @media screen and (min-height:700px) and (max-width:600px){
 	.img_home{
-		height:420px;
+		height:410px;
 	}
 }
 
