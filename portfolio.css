@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	color:black;
+	color:#000;
 }
 
 body{
@@ -22,6 +22,10 @@ h1{
 	margin-bottom:10px;
 	padding:5px;
 	color:white;
+}
+
+.projects h1{
+	margin-bottom:5px;
 }
 h2{
 	background-color:#8D8741;
@@ -45,20 +49,32 @@ main{
     justify-content: space-between;
 }
 a{
-	font-size:18px;
-	padding:10px;
+	font-size:25px;
+	padding:5px;
 	border-radius:16px;
 	border-style: solid;
 	border-width:2px;
 	border-color:#DAAD86;
 	margin:0 auto;
+	color:#FBEEC1;
 	text-decoration:none;
-	color:black;;
 	background-color:#659DBD;
 }
 
 a:hover, a:active{
 	background-color:#DAAD86
+}
+
+nav a{
+	font-size:5vh;
+}
+
+.contact_buttons a{
+	font-size:40px;
+}
+
+.fa-facebook{
+	padding:5px 10px;
 }
 
 section{
@@ -76,6 +92,7 @@ section{
 	border-width:2px;
 	border-color:#DAAD86;
 	margin:50px auto;
+	padding:20px;
 }
 
 .paragraph p{
@@ -86,6 +103,7 @@ section{
 	display:flex;
 	height:100%;
 	margin-right:250px;
+	margin-left:20px;
 	flex-direction:column;
 }
 nav{
@@ -109,12 +127,11 @@ nav{
 
 .bg_box{
 	background-color:#FBEEC1;
-	flex-grow:1;
 }
 
 footer{
 	background-color:#FBEEC1;
-	border-radius:16px;
+	width: 100vw;
 	border-style: solid;
 	border-width:2px;
 	border-color:#DAAD86;
@@ -153,16 +170,21 @@ footer{
 	
 }
 
-img{
+.img_home{
 	width: auto;
-	height: 40%;
+	height: auto;
 	margin:20px;
-	
+	border-radius:32px;
+	border-style: solid;
+	border-width:2px;
+	border-color:#DAAD86;
+	margin:0 auto;
 }
 
 .img{
 	width:40%;
 	height:auto;
+	margin:20px;
 }
 
 .img_wrap{
@@ -197,15 +219,16 @@ img{
 	display: flex;
 	height:60%;
 }
-.border{
-	background-color:#BC986A;
-	height:100%;
-	z-index:1;
-	width:10%;
-}
 }
 .flex_border section{
 	width:auto;
 	flex-grow:8;
 }
+
+@media screen and (min-height:700px) and (max-width:600px){
+	.img_home{
+		height:420px;
+	}
+}
+
 
