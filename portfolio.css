@@ -3,7 +3,13 @@
 }
 
 body{
+	background-image: url(mountain_bg.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
 	background-color:#F8F7F2;
+	min-height:100%;
+	background-attachment:fixed;
+	background-size:cover;
 }
 h1{
 	background-color:#EC6205;
@@ -30,10 +36,11 @@ h2{
 
 
 main{
-	height: 100vh;
-	margin:0 auto;
-	display: flex;
-	flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 a{
 	font-size:18px;
@@ -52,8 +59,8 @@ a:hover, a:active{
 }
 
 section{
-	height:70%;
 	width:80%;
+	height:100%;
 	margin:0 auto;
 	display:flex;
 	justify-content:space-between;
@@ -73,7 +80,7 @@ nav{
 	flex-direction:column;
 	justify-content:space-around;
 	height:80%;
-	margin:0px 5=40px;
+	margin:0px 40px;
 }
 
 .link_bar{
@@ -87,6 +94,10 @@ nav{
 	margin-bottom:30px;
 }
 
+.bg_box{
+	background-color:#F8F7F2;
+	flex-grow:1;
+}
 
 footer{
 	background-color:#058FEC;
@@ -129,9 +140,9 @@ footer{
 	
 }
 
-.img{
-	width: 300px;
-	height:300px;
+img{
+	width: auto;
+	height: 30%;
 	margin:20px 50px;
 }
 
@@ -159,5 +170,22 @@ footer{
 
 .top_link{
 	margin:0px 100px;
+}
+
+.flex_border{
+	position:relative;
+	display: flex;
+	height:100%;
+}
+.border{
+	background-color:#F8F7F2;
+	height:100%;
+	z-index:1;
+	width:10%;
+}
+}
+.flex_border section{
+	width:auto;
+	flex-grow:8;
 }
 
