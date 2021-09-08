@@ -48,7 +48,7 @@ h3{
 
 /* Hyperlink formatting */
 
-a{
+a, a:active{
 	font-size:25px;
 	padding:5px;
 	border-radius:16px;
@@ -68,6 +68,10 @@ a:hover {
 
 a:focus{
 	background-color:#f1db91
+}
+
+a:visited{
+	background-color:#228db1;
 }
 
 nav a{
