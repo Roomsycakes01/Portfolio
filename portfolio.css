@@ -1,6 +1,6 @@
 *{
 	box-sizing: border-box;
-	color:#fff;
+	color: #fff;
 }
 
 /* Background image css */
@@ -9,237 +9,207 @@ body{
 	background-image: url(mountain_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-color:#FBEEC1;
-	background-attachment:fixed;
-	background-size:cover;
+	background-color: #FBEEC1;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 /* Header formatting */
 
 h1, h2{
-	background-color:#115464;
-	border-radius:16px;
-	border-style: solid;
-	border-width:2px;
-	border-color:#0c96b0;
-	margin:auto;
-	margin-top:10px;
-	margin-bottom:10px;
-	padding:5px;
+	background-color: #115464;
+	border-radius: 16px;
+	border: 2px solid #0c96b0;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
 	font-size: 30px;
 }
-
 .projects h1{
-	margin-bottom:5px;
+	margin-bottom: 5px;
 }
-
 h3{
-	display:inline;
-	background-color:#f7ebae;
-	border-radius:16px;
-	border-style: solid;
-	border-width: 2px;
-	border-color:#228db1;
+	display: inline;
+	background-color: #f7ebae;
+	border-radius: 16px;
+	border: 2px solid #228db1;
 	margin: 10px auto;
-	padding:5px;
+	padding: 5px;
 	font-size: 30px;
-	color:#000;
+	color: #000;
 }
 
 /* Hyperlink formatting */
 
 a{
-	font-size:25px;
-	padding:5px;
-	border-radius:16px;
-	border-style: solid;
-	border-width:2px;
-	border-color:#f1db91;
-	margin:0 auto;
-	color:#fff;
-	text-decoration:none;
-	background-color:#228db1;
-	outline:none;
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 16px;
+	border: 2px solid #f1db91;
+	margin: 0 auto;
+	color: #fff;
+	text-decoration: none;
+	background-color: #228db1;
+	outline: none;
 }
-
 a:visited{
-	background-color:#228db1;
+	background-color: #228db1;
 }
-
 a:hover {
-	background-color:#f1db91
+	background-color: #f1db91;
 }
-
 a:focus{
-	background-color:#f1db91
+	background-color: #f1db91;
 }
-
-nav a{
-	font-size:calc(20px + 0.3vw);
-	margin:8px auto;
+.project_nav a{
+	font-size: calc(20px + 0.3vw);
+	margin: 8px auto;
 }
-
 .contact_buttons a{
-	font-size:4vw;
-	margin: 10px auto
+	font-size: 4vw;
+	margin: 10px auto;
 }
 
 /* moves the top link to the left of the page */
 
 .top_link{
-	margin:0px ;
+	margin: 0px;
 }
 
 /*formatting on the left, right and center text sections and initial home section*/
 
 section{
-	width:80%;
-	margin:0 auto;
-	display:flex;
-	justify-content:space-between;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
-
 .paragraph{
 	flex-direction: column;
-	justify-content: start;
-	background-color:#12505f;
-	border-radius:16px;
-	border-style: solid;
-	border-width:2px;
-	border-color:#f7ebae;
-	margin:50px auto;
-	padding:20px;
+	justify-content: flex-start;
+	background-color: #12505f;
+	border-radius: 16px;
+	border: 2px solid #f7ebae;
+	margin: 50px auto;
+	padding: 20px;
 }
 .paragraph p{
-	width:60%;
+	width: 60%;
 }
-
 .paragraph p, .center_bar p{
-	font-size:calc(20px + 0.5vw);
+	font-size: calc(20px + 0.5vw);
 }
-
 .center_bar{
-	display:flex;
-	margin:0 auto;
-	width:80%;
-	flex-direction:column;
-	align-items:center;
-	background-color:#f8eeba;
-	border-radius:16px;
-	border-style: solid;
-	border-width:2px;
-	border-color:#104e5d;
-	padding:20px 20px;
+	display: flex;
+	margin: 0 auto;
+	width: 80%;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f8eeba;
+	border-radius: 16px;
+	border: 2px solid #104e5d;
+	padding: 20px;
 	
 }
-
 .center_bar p{
-	color:#000;
+	color: #000;
 }
 
 /* css on the text and image in the about me and projects sections */
 
 .text_box{
-	display:flex;
+	display :flex;
 }	
 
 /* css on the projects nav bar layout */
+
 .projects{
-	display:flex;
-	margin:0 auto;
-	flex-direction:column;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
 	
 }
-
-
-nav{
-	display:flex;
-	flex-direction:column;
-	justify-content:space-around;
+.project_nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 /* css on the header bar */
 
 .link_bar{
-	width:80%;
-	margin:30px auto;
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
+	width: 80%;
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* css on the phone and email section on home */
 
 .contact_info{
-	display:flex;
-	flex-direction:column;
+	display: flex;
+	flex-direction: column;
 }
 
 /* css on the social media button layout */
 
 .contact_buttons{
-	height:100%;
-	width:30%;
-	display:flex;
-	justify-content:space-around;
-	align-items:center;
-	margin:auto 0px;
-	
+	height: 100%;
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto 0px;
 }
 
 /*css on images */
 
 img{
-	border-radius:32px;
-	border-style: solid;
-	border-width:2px;
-	border-color:#228db1;
+	border-radius: 32px;
+	border: 2px solid #228db1;
 }
 .img_home{
 	width: 40vw;
 	height: fit-content;
-	margin:0 auto;
-	margin-top:10px;
+	margin: 0 auto;
+	margin-top: 10px;
 }
-
 .img{
-	min-width:150px;
-	width:40%;
+	min-width: 150px;
+	width: 40%;
 	height: fit-content;
-	margin:10px;
+	margin: 10px;
 }
 
 /* Media queeries on the home page image, social media buttons, and text boxes on about me and projects  */
 
-@media screen and (min-width:900px){
+@media screen and (min-width: 900px){
 	.img_home{
-		width:auto;
-		height:500px;
+		width: auto;
+		height: 500px;
 	}
 	.fa-facebook{
 		padding: 5px 10px;
 	}
 }
-
-@media screen and (max-width:400px){
+@media screen and (max-width: 400px){
 	.contact_buttons{
-		flex-direction:column;
+		flex-direction: column;
 	}
 }
-
 @media screen and (max-width:950px){
 	.text_box.left{
-		flex-direction:column-reverse;
-		justify-content: start;
-		align-items:center;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	.text_box.right{
-		flex-direction:column;
-		justify-content: start;
-		align-items:center;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 	}
 	.paragraph p{
-		width:100%;
+		width: 100%;
 	}
 }
-
