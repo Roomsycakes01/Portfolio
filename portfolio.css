@@ -3,6 +3,8 @@
 	color:#fff;
 }
 
+/* Background image css */
+
 body{
 	background-image: url(mountain_bg.jpg);
 	background-repeat: no-repeat;
@@ -11,6 +13,9 @@ body{
 	background-attachment:fixed;
 	background-size:cover;
 }
+
+/* Header formatting */
+
 h1, h2{
 	background-color:#115464;
 	border-radius:16px;
@@ -27,18 +32,21 @@ h1, h2{
 .projects h1{
 	margin-bottom:5px;
 }
+
 h3{
 	display:inline;
-	background-color:#2494bc;;
+	background-color:#f7ebae;
 	border-radius:16px;
 	border-style: solid;
 	border-width: 2px;
-	border-color:#f7ebae;
+	border-color:#228db1;
 	margin: 10px auto;
 	padding:5px;
 	font-size: 30px;
+	color:#000;
 }
 
+/* Hyperlink formatting */
 
 a{
 	font-size:25px;
@@ -55,31 +63,30 @@ a{
 }
 
 a:hover {
-	background-color:#DAAD86
+	background-color:#f1db91
 }
 
 a:focus{
-	background-color:#DAAD86
+	background-color:#f1db91
 }
 
 nav a{
-	font-size:4vw;
-	margin:10px auto;
+	font-size:calc(20px + 0.3vw);
+	margin:8px auto;
 }
 
 .contact_buttons a{
 	font-size:4vw;
-	margin: 0 auto
+	margin: 10px auto
 }
+
+/* moves the top link to the left of the page */
 
 .top_link{
-	margin:0 ;
+	margin:0px ;
 }
 
-footer{
-	width:100%;
-}
-
+/*formatting on the left, right and center text sections and initial home section*/
 
 section{
 	width:80%;
@@ -91,7 +98,6 @@ section{
 .paragraph{
 	flex-direction: column;
 	justify-content: start;
-	height:auto;
 	background-color:#12505f;
 	border-radius:16px;
 	border-style: solid;
@@ -108,55 +114,9 @@ section{
 	font-size:calc(20px + 0.5vw);
 }
 
-.projects{
-	display:flex;
-	height:100%;;
-	margin:0 auto;
-	flex-direction:column;
-	
-}
-nav{
-	display:flex;
-	flex-direction:column;
-	justify-content:space-around;
-	height:100%;
-}
-
-.link_bar{
-	width:80%;
-	margin:0 auto;
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	margin-top:30px;
-}
-
-
-footer{
-	padding:5px 0px;
-}
-
-
-.contact_info{
-	display:flex;
-	flex-direction:column;
-}
-
-.contact_buttons{
-	height:100%;
-	width:30%;
-	display:flex;
-	justify-content:space-around;
-	align-items:center;
-	margin: auto;
-	
-}
-
 .center_bar{
 	display:flex;
 	margin:0 auto;
-	margin-top:10px;
-	margin-bottom:10px;
 	width:80%;
 	flex-direction:column;
 	align-items:center;
@@ -172,6 +132,58 @@ footer{
 .center_bar p{
 	color:#000;
 }
+
+/* css on the text and image in the about me and projects sections */
+
+.text_box{
+	display:flex;
+}	
+
+/* css on the projects nav bar layout */
+.projects{
+	display:flex;
+	margin:0 auto;
+	flex-direction:column;
+	
+}
+
+
+nav{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}
+
+/* css on the header bar */
+
+.link_bar{
+	width:80%;
+	margin:30px auto;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+/* css on the phone and email section on home */
+
+.contact_info{
+	display:flex;
+	flex-direction:column;
+}
+
+/* css on the social media button layout */
+
+.contact_buttons{
+	height:100%;
+	width:30%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	margin:auto 0px;
+	
+}
+
+/*css on images */
 
 img{
 	border-radius:32px;
@@ -190,21 +202,10 @@ img{
 	min-width:150px;
 	width:40%;
 	height: fit-content;
-	margin:10px 20px;
+	margin:10px;
 }
 
-.text_box{
-	width:100%;
-	display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-}	
-
-.header_placement{
-	display:flex;
-	flex-direction:row-reverse;
-}
-
+/* Media queeries on the home page image, social media buttons, and text boxes on about me and projects  */
 
 @media screen and (min-width:900px){
 	.img_home{
