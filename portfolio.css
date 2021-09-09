@@ -73,6 +73,7 @@ a:focus{
 
 .top_link{
 	margin: 0px;
+	position:fixed;
 }
 
 /*formatting on the left, right and center text sections and initial home section*/
@@ -141,7 +142,7 @@ a:focus{
 
 .link_bar{
 	width: 80%;
-	margin: 30px auto;
+	margin: 10px auto 50px auto;
 	display: flex;
 	justify-content: space-between;
 }
