@@ -1,0 +1,216 @@
+*{
+	box-sizing: border-box;
+	color: #fff;
+}
+
+/* Background image css */
+
+body{
+	background-image: url(mountain_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-color: #FBEEC1;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+main{
+	height:100vh;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* Header formatting */
+
+h1, h2{
+	background-color: #115464;
+	border-radius: 16px;
+	border: 2px solid #f1db91;
+	margin: 10px auto;
+	padding: 5px;
+	font-size: 30px;
+}
+.projects h1{
+	margin-bottom: 5px;
+}
+h3{
+	background-color: #f1db91;
+	border-radius: 16px;
+	margin: 10px auto;
+	padding: 5px;
+	font-size: 30px;
+	color: #000;
+}
+
+/* Hyperlink formatting */
+
+a{
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 16px;
+	border: 2px solid #f1db91;
+	margin: 0 auto;
+	color: #fff;
+	text-decoration: none;
+	background-color: #228db1;
+	outline: none;
+}
+a:visited{
+	background-color: #228db1;
+	color: #fff;
+}
+a:hover {
+	background-color: #f1db91;
+	color: #000;
+}
+a:focus{
+	background-color: #f1db91;
+}
+.project_nav a{
+	font-size: calc(22px + 0.3vw);
+	margin: 8px auto;
+}
+.contact_buttons a{
+	font-size: 4vw;
+	margin: 10px auto;
+}
+
+/* moves the top link to the left of the page */
+
+.top_link{
+	position: fixed;
+	top: 2vh;
+}
+
+/*formatting on the left, right and center text sections and initial home section*/
+
+.section_home{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.content_box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	background-color: #12505f;
+	border-radius: 16px;
+	margin: 50px auto;
+	padding: 20px;
+}
+.content_box p, .center_bar p{
+	font-size: calc(20px + 0.5vw);
+}
+.center_bar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #f1db91;
+	border-top: 3px solid #115464;
+	border-bottom: 3px solid #115464;
+	padding:20px 0px;
+}
+.center_bar p{
+	color: #000;
+}
+
+/* css on the text and image in the about me and projects sections */
+
+.text_box{
+	display :flex;
+}	
+
+/* css on the projects nav bar layout */
+
+.projects{
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	
+}
+.project_nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/* css on the navigation and contacts bar */
+
+.link_bar{
+	width: 80%;
+	margin: 10px auto 40px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer{
+	padding-bottom:10px;
+}
+
+/* css on the phone and email section on home */
+
+.contact_info{
+	display: flex;
+	flex-direction: column;
+}
+
+/* css on the social media button layout */
+
+.contact_buttons{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	margin: auto 0px;
+}
+
+/*css on images */
+
+img{
+	border-radius: 32px;
+	min-width: 200px;
+	width: 40%;
+	height: fit-content;
+	margin: 15px;
+}
+.img_home{
+	width: 40vw;
+	min-width:0px;
+	margin: 10px auto auto auto;
+}
+
+/* Media queeries on the home page image, social media buttons, and text boxes on about me and projects  */
+
+@media screen and (min-width: 900px){
+	.img_home{
+		width: auto;
+		height: 500px;
+	}
+	.fa-facebook{
+		padding: 5px 10px;
+	}
+}
+@media screen and (max-width: 400px){
+	.contact_buttons{
+		flex-direction: column;
+	}
+}
+@media screen and (max-width:950px){
+	.text_box.left{
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.text_box.right{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.paragraph p{
+		width: 100%;
+	}
+}
