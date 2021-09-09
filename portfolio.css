@@ -1,20 +1,19 @@
-*{
+* {
 	box-sizing: border-box;
 	color: #fff;
 }
 
 /* Background image css */
 
-body{
+body {
 	background-image: url(mountain_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-color: #FBEEC1;
-	background-attachment: fixed;
 	background-size: cover;
 }
 
-main{
+main {
 	height:100vh;
 	display: flex;
 	flex-direction:column;
@@ -24,29 +23,31 @@ main{
 
 /* Header formatting */
 
-h1, h2{
+h1, h2 {
 	background-color: #115464;
-	border-radius: 16px;
-	border: 2px solid #f1db91;
+	border-radius: 4px;
 	margin: 10px auto;
 	padding: 5px;
 	font-size: 30px;
 }
-.projects h1{
-	margin-bottom: 5px;
-}
-h3{
+h3 {
 	background-color: #f1db91;
-	border-radius: 16px;
+	border-radius: 4px;
 	margin: 10px auto;
 	padding: 5px;
 	font-size: 30px;
 	color: #000;
 }
+footer h2 {
+	background-color:transparent;
+}
+.projects h1 {
+	margin-bottom: 5px;
+}
 
 /* Hyperlink formatting */
 
-a{
+a {
 	font-size: 25px;
 	padding: 5px;
 	border-radius: 16px;
@@ -57,7 +58,7 @@ a{
 	background-color: #228db1;
 	outline: none;
 }
-a:visited{
+a:visited {
 	background-color: #228db1;
 	color: #fff;
 }
@@ -65,34 +66,33 @@ a:hover {
 	background-color: #f1db91;
 	color: #000;
 }
-a:focus{
+a:focus {
 	background-color: #f1db91;
 }
-.project_nav a{
+.project_nav a {
 	font-size: calc(22px + 0.3vw);
 	margin: 8px auto;
 }
-.contact_buttons a{
+.contact_buttons a {
 	font-size: 4vw;
 	margin: 10px auto;
 }
 
 /* moves the top link to the left of the page */
 
-.top_link{
+.top_link {
 	position: fixed;
 	top: 2vh;
 }
 
 /*formatting on the left, right and center text sections and initial home section*/
 
-.section_home{
+.section_home {
 	width: 80%;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
-.content_box{
+.content_box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -102,10 +102,10 @@ a:focus{
 	margin: 50px auto;
 	padding: 20px;
 }
-.content_box p, .center_bar p{
+.content_box p, .center_bar p {
 	font-size: calc(20px + 0.5vw);
 }
-.center_bar{
+.center_bar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -115,25 +115,25 @@ a:focus{
 	border-bottom: 3px solid #115464;
 	padding:20px 0px;
 }
-.center_bar p{
+.center_bar p {
 	color: #000;
 }
 
 /* css on the text and image in the about me and projects sections */
 
-.text_box{
+.text_box {
 	display :flex;
 }	
 
 /* css on the projects nav bar layout */
 
-.projects{
+.projects {
 	display: flex;
 	margin: 0 auto;
 	flex-direction: column;
 	
 }
-.project_nav{
+.project_nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -141,27 +141,27 @@ a:focus{
 
 /* css on the navigation and contacts bar */
 
-.link_bar{
+.link_bar {
 	width: 80%;
 	margin: 10px auto 40px auto;
 	display: flex;
 	justify-content: space-between;
 }
 
-footer{
+footer {
 	padding-bottom:10px;
 }
 
 /* css on the phone and email section on home */
 
-.contact_info{
+.contact_info {
 	display: flex;
 	flex-direction: column;
 }
 
 /* css on the social media button layout */
 
-.contact_buttons{
+.contact_buttons {
 	width: 30%;
 	display: flex;
 	align-items: center;
@@ -170,14 +170,14 @@ footer{
 
 /*css on images */
 
-img{
+img {
 	border-radius: 32px;
 	min-width: 200px;
 	width: 40%;
 	height: fit-content;
 	margin: 15px;
 }
-.img_home{
+.img_home {
 	width: 40vw;
 	min-width:0px;
 	margin: 10px auto auto auto;
@@ -185,32 +185,32 @@ img{
 
 /* Media queeries on the home page image, social media buttons, and text boxes on about me and projects  */
 
-@media screen and (min-width: 900px){
-	.img_home{
+@media screen and (min-width: 900px) {
+	.img_home {
 		width: auto;
 		height: 500px;
 	}
-	.fa-facebook{
+	.fa-facebook {
 		padding: 5px 10px;
 	}
 }
-@media screen and (max-width: 400px){
-	.contact_buttons{
+@media screen and (max-width: 400px) {
+	.contact_buttons {
 		flex-direction: column;
 	}
 }
-@media screen and (max-width:950px){
-	.text_box.left{
+@media screen and (max-width:950px) {
+	.text_box.left {
 		flex-direction: column-reverse;
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.text_box.right{
+	.text_box.right {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.paragraph p{
+	.paragraph p {
 		width: 100%;
 	}
 }
