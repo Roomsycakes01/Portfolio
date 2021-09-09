@@ -14,6 +14,14 @@ body{
 	background-size: cover;
 }
 
+main{
+	height:100vh;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+}
+
 /* Header formatting */
 
 h1, h2{
@@ -61,7 +69,7 @@ a:focus{
 	background-color: #f1db91;
 }
 .project_nav a{
-	font-size: calc(20px + 0.3vw);
+	font-size: calc(22px + 0.3vw);
 	margin: 8px auto;
 }
 .contact_buttons a{
@@ -72,8 +80,9 @@ a:focus{
 /* moves the top link to the left of the page */
 
 .top_link{
+	position: fixed;
+	top: 3vh;
 	margin: 0px;
-	position:fixed;
 }
 
 /*formatting on the left, right and center text sections and initial home section*/
@@ -138,11 +147,11 @@ a:focus{
 	justify-content: space-around;
 }
 
-/* css on the header bar */
+/* css on the navigation and contacts bar */
 
 .link_bar{
 	width: 80%;
-	margin: 10px auto 50px auto;
+	margin: 10px auto 40px auto;
 	display: flex;
 	justify-content: space-between;
 }
