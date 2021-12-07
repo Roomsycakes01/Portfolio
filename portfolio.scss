@@ -1,0 +1,233 @@
+* {
+	box-sizing: border-box;
+	color: #fff;
+}
+
+$sand: #f1db91;
+$darkCyan: #228db1;
+$darkGreen: #115464;
+
+
+@mixin flexCenterColumn(){
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+@mixin headerFormat(){
+	border-radius: 4px;
+	margin: 10px auto;
+	padding: 5px;
+	font-size: 30px;
+}
+
+@mixin fontScale(){
+	font-size: calc(20px + 0.5vw);
+}
+
+@mixin buttonSelectColour($bgColour, $textColour){
+	background-color: $bgColour;
+	color: $textColour;
+}
+
+/* Background image css */
+
+body {
+	background-image: url(mountain_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+main {
+	height:100vh;
+	@include flexCenterColumn();
+	justify-content:space-between;
+
+}
+
+/* Header formatting */
+
+h1, h2 {
+	background-color: $darkGreen;
+	@include headerFormat();
+}
+h3 {
+	background-color: $sand;
+	color: #000;
+	@include headerFormat();
+}
+
+/* Hyperlink formatting */
+
+a {
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 16px;
+	border: 2px solid $sand;
+	margin: 0 auto;
+	color: #fff;
+	text-decoration: none;
+	background-color: $darkCyan;
+	outline: none;
+}
+a:visited {
+	@include buttonSelectColour($darkCyan, #fff)
+}
+a:hover {
+	@include buttonSelectColour($sand, #000);
+}
+a:focus {
+	@include buttonSelectColour($sand, #000);
+}
+
+/* moves the top link to the left of the page */
+
+.top_link {
+	position: fixed;
+	top: 2vh;
+}
+
+/*formatting on the left, right and center text sections and initial home section*/
+
+.section_home {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.content_box {
+	@include flexCenterColumn();
+	width: 80%;
+	background-color: $darkGreen;
+	border-radius: 16px;
+	margin: 50px auto;
+	padding: 20px;
+	p {
+		@include fontScale();
+	}
+}
+
+.center_bar {
+	@include flexCenterColumn();
+	width: 100%;
+	background-color: $sand;
+	border-top: 3px solid $darkGreen;
+	border-bottom: 3px solid $darkGreen;
+	padding:20px 0;
+	p {
+		color: #000;
+		@include fontScale();
+	}
+}
+
+/* css on the text and image in the about me and projects sections */
+
+.text_box {
+	display :flex;
+}	
+
+/* css on the projects nav bar layout */
+
+.projects {
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	h1 {
+		margin-bottom: 5px;
+	}
+	
+}
+.project_nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	a {
+		font-size: calc(22px + 0.3vw);
+		margin: 8px auto;
+	}
+}
+
+/* css on the navigation and contacts bar */
+
+.link_bar {
+	width: 80%;
+	margin: 10px auto 40px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer {
+	padding-bottom:10px;
+	h2 {
+		background-color:transparent;
+	}
+}
+
+/* css on the phone and email section on home */
+
+.contact_info {
+	display: flex;
+	flex-direction: column;
+}
+
+/* css on the social media button layout */
+
+.contact_buttons {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	margin: auto 0;
+	a {
+		font-size: 4vw;
+		margin: 10px auto;
+	}
+}
+
+/*css on images */
+
+img {
+	border-radius: 32px;
+	min-width: 200px;
+	width: 40%;
+	height: fit-content;
+	margin: 15px;
+}
+.img_home {
+	width: 40vw;
+	margin: 10px auto auto auto;
+	height:auto;
+	min-width: 150px;
+}
+
+/* Media queries on the home page image, social media buttons, and text boxes on about me and projects  */
+
+@media screen and (min-width: 900px) {
+	.img_home {
+		width: auto;
+		height: 500px;
+	}
+	.fa-facebook {
+		padding: 5px 10px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.contact_buttons {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width:950px) {
+	.text_box.left {
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.text_box.right {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.paragraph p {
+		width: 100%;
+	}
+}
